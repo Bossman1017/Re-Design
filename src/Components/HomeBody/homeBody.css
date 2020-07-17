@@ -1,0 +1,174 @@
+@import url(//db.onlinewebfonts.com/c/03fe5644d1605049951f58ca7961c33f?family=Samsung+Sharp+Sans+Bold);
+
+/********** 
+Background image 
+**********/
+body{
+    margin: 0; 
+}
+.homeBody{
+    background: url('Galaxy_background.jpg');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/********** 
+Home Slider Styles 
+**********/
+.slides {
+    position: relative;
+    margin: 0 0 2% 0;
+    padding-top: 5%; 
+}
+.slides img {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/**********  
+Scroll Buttons Styles 
+**********/
+.scrollButtons{
+    display: flex;
+    justify-content: center;
+}
+.scrollButton{
+    font-family: "Samsung Sharp Sans Bold";
+    cursor: pointer;
+    background-color: rgb(41, 40, 40);
+    border-radius: 50px;
+    height: 100%;
+    padding: .5%;
+    margin: 1% 1% 0 1%;
+    color: white;
+}
+.scrollButton:hover{
+    background-color: rgb(68, 66, 66);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/********** 
+Products Preview Styles 
+**********/
+.productsSection {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8%;
+}
+.sectionBoxes {
+    border-radius: 7%;
+    width: 35vw;
+    height: 50vh;
+    text-align: center;
+    background-color: rgb(99, 61, 168);
+    padding: 2%;
+}
+.sectionBoxes:hover {
+    cursor: pointer;
+    background-color: rgb(41, 40, 40);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.eventsSection h2, .dealsSection h2 {
+    font-size: 2.2rem;
+    font-family: "Samsung Sharp Sans Bold";
+    font-weight: bold;
+    color: white;
+    margin: 0
+}
+.eventsSection img, .dealsSection img{
+    width: 100%;
+}
+
+/********** 
+Store Categories Styles 
+**********/
+.storeCategories {
+    display: flex; 
+    width: 90vw;
+    height: 30vh;
+    margin: 5% auto 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 3%;
+}
+.categoriesLink {
+    flex-direction: row;
+    text-align: center;
+    font-family: "Samsung Sharp Sans Bold";
+    text-decoration: none;
+}
+.categoriesLink h3 {
+    
+    margin: 0;
+    color: white;
+}
+.categoriesLink img:hover {
+    filter: sepia(80%);
+    cursor: pointer;
+}
+
+/********** 
+Resolution adjustment styles for tablet 
+**********/
+@media (max-width: 1050px) {
+    .slides {
+        margin: 0 0 2% 0;
+        padding-top: unset;
+    }
+    .slides img {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .scrollButton{
+        padding: 1%;
+    }
+
+    .sectionBoxes {
+        width: 40vw;
+        height: 25vh; 
+    }
+    .eventsSection h2, .dealsSection h2 {
+        font-size: 1.8rem;
+        margin-bottom: 4%;
+    }
+
+    .categoriesLink img {
+        width: 100%;
+    }
+}
+
+/********** 
+Resolution adjustment styles for phone
+**********/
+@media (max-width: 750px) {
+    .slides img {
+        height: 24vh;
+    }
+
+    .scrollButton{
+        margin: 5% 2% 0 2%;  
+        padding: 2%;  
+    }
+
+    .eventsSection h2, .dealsSection h2 {
+        font-size: 1.5rem; 
+    }
+    .eventsSection h2 {
+        margin-bottom: 0;
+    }
+    .dealsSection h2 {
+        margin-top: 8%;
+    }
+
+    .categoriesLink {
+        flex-wrap: wrap;
+    }
+    .categoriesLink h3 {
+       font-size: .6rem;
+    }
+    .categoriesLink img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,76 @@
+/********** 
+Header Styles 
+**********/
+.header__container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background:rgb(99, 61, 168);
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.samsung_nav{
+
+  width: 21%;
+  height: 8vh;
+  transform: translateY(2px);
+}
+#navbar ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+  
+}
+.navlink{
+    color: white;
+    font-size: 24px;
+    padding-right: 3rem;
+    font-family: "Samsung Sharp Sans Bold";
+    text-decoration: none;
+    
+}
+.navlink:hover{
+  color: rgb(238, 219, 255);
+}
+
+.cart {
+    background-color: black;
+    border-radius: 50%;
+    width: 2vw;
+    height: 3vh;
+    margin-left: 5%;
+}
+
+.search {
+  background-color: black;
+  width: 10%;
+  margin-left: 6%;
+}
+
+/********** 
+Mobile Header View Styles
+**********/
+@media (max-width: 750px) {
+  .navlink {
+    color: rgb(48, 46, 46);
+    font-weight: bolder;
+    text-shadow: -1.5px -1.5px 0 white, 1.5px -1.5px 0 white, -1.5px 1.5px 0 white, 1.5px 1.5px 0 white;
+    padding-right: 0;
+  }
+  .samsung_nav{
+      width: 50%
+  }
+  #navbar li{
+      padding-left: 2rem;
+      padding-bottom: 2rem;
+      
+  }
+  #navbar li:hover{
+    color: rgb(238, 219, 255);
+  }
+  
+}
